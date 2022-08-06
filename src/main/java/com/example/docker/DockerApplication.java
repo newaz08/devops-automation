@@ -4,15 +4,14 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.*;
 
-import javax.annotation.PostConstruct;
-
 @SpringBootApplication
+@RestController
 public class DockerApplication {
 
 
-	//@GetMapping("/hello")
+	@GetMapping("/")
 	public String greetings(){
-		return "Hello";
+		return "Welcome to AWS first Deployment....";
 	}
 	public static void main(String[] args) {
 
